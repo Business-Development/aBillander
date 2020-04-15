@@ -1,29 +1,37 @@
-<?php
+<?php 
+
+// https://stackoverflow.com/questions/19783298/use-a-trait-conditionally-in-php
+
+/*
+
+//your Trait
+
+if($isModeDbg){
+    trait Dbg{
+        function dbg(mssg){
+            debugbarOrSomethingSimilar(mssg);
+        }
+    }
+}else{
+    trait Dbg{
+        function dbg(mssg){
+        }
+    }
+}
+
+//your class
+class Something{
+  use Dbg;
+}
+
+*/
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
+use App\ProductionPlanner;
 
-use \App\ProductionPlanner;
-
-use App\Traits\ViewFormatterTrait;
-
-class ProductionSheet extends Model
+trait ProductionSheetTrait
 {
-    use ViewFormatterTrait;
-
-    public $sandbox;
-
-//    protected $dates = ['due_date'];
-	
-    protected $fillable = [ 'sequence_id', 'document_prefix', 'document_id', 'document_reference', 
-    						'due_date', 'name', 'notes', 'is_dirty'
-                          ];
-
-    public static $rules = array(
-    	'due_date'    => 'required',
-    	);
-    
 
     /*
     |--------------------------------------------------------------------------
