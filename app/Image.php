@@ -165,7 +165,7 @@ class Image extends Model {
         $extension = pathinfo($img_url, PATHINFO_EXTENSION);        // See: https://www.w3schools.com/php/func_filesystem_pathinfo.asp
 
         $data = [
-                'caption' => $params['caption'],
+                'caption' => null,
                 'extension' => $extension,
                 'position' => 0,
                 'is_featured'=> false,
