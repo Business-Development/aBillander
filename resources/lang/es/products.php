@@ -92,6 +92,7 @@ return [
 	'Combinations'     => 'Combinaciones',
 	'Images'     => 'Imágenes',
 	'Internet'     => 'Internet',
+	'Web Shop'	=> 'Tienda Online',
 	'Manufacturing'     => 'Fabricación',
 
 	'Ean13'     => 'Ean13',
@@ -281,5 +282,33 @@ return [
 
     'Prices are exclusive of Ecotax' => 'El Precio no incluye la Ecotasa',
     'Prices are inclusive of Ecotax' => 'El Precio incluye la Ecotasa',
+
+
+	/*
+	|--------------------------------------------------------------------------
+	| Products Language Lines :: Internet Tab
+	|--------------------------------------------------------------------------
+	|
+	| .
+	|
+	*/
+
+    'Import Images' => 'Importar Imágenes',
+
+
+
+	/*
+	|--------------------------------------------------------------------------
+	| Products Language Lines :: Reorder Point
+	|--------------------------------------------------------------------------
+	|
+	| .
+	|
+	*/
+
+    'Products with Low Stock' => 'Productos con Bajo Stock',
+    'Suggested Quantity' => 'Cantidad Sugerida',
+    'Re-Order Point' => 'Punto de Pedido',
+	'Stock Control'     => 'Control de Stock',
 
 ];
